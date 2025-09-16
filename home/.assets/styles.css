@@ -58,6 +58,7 @@ a {
     gap: 2em;
     margin-top: 1em;
     flex-wrap: wrap;
+    justify-content: center;
 
     & a {
         display: flex;
