@@ -17,5 +17,8 @@
   },
   "scripts": {
     "start": "bun run --watch index.tsx"
+  },
+  "engines": {
+    "node": "23"
   }
 }
