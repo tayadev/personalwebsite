@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'SilomBol';
+    src: url('/.assets/fonts/SilomBol.ttf') format('truetype');
+}
+
+html {
+    cursor: url('/.assets/cursors/main4x.png'), auto;
+}
+
+body {
+    background: #564b69;
+    font-family: 'SilomBol', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:1em;
+}
+
+h1 {
+    color: #f0e9d2;
+    text-align: center;
+    font-size: 4em;
+}
+
+a {
+    cursor: url('/.assets/cursors/pointer4x.png'), pointer;
+}
+
+.window {
+    background: #d4c1aa;
+    border: 4px solid #29142a;
+    padding: 2em;
+    padding-top: 0;
+
+    & h2 {
+        font-family: 'SilomBol', sans-serif;
+        font-size: 2em;
+        background: #29142a;
+        color: #f0e9d2;
+        padding-left: 0.5ch;
+        margin: 0;
+        margin-inline: -1em;
+        margin-bottom: 1em;
+
+        & a {
+            color: #f0e9d2;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+            
+    }
+}
+
+.icon-grid {
+    display: flex;
+    gap: 2em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+
+    & a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        gap: 0.25em;
+        width: 5em;
+
+        & span {
+            text-align: center;
+            word-break: break-word;
+        }
+
+        & img {
+            image-rendering: pixelated;
+            width: 5em;
+        }
+
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+    color: #f0e9d2;
+
+    & p {
+        margin: 0;
+        line-height: 1.5em;
+    }
+}
