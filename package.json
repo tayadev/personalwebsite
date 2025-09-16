@@ -14,5 +14,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "server": "react-dom/server"
+  },
+  "scripts": {
+    "start": "bun run --watch index.tsx"
   }
 }
