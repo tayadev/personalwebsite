@@ -128,7 +128,7 @@ serve({
             }
 
             const stream = await renderToReadableStream(<DirectoryListing path={path} items={items} />);
-            return new Response(stream);
+            return new Response(stream, { headers: { "Content-Type": "text/html" }});
         }
 
         // if file
@@ -140,7 +140,7 @@ serve({
                 const content = await Bun.file(fullPath).text();
                 const stream = await renderToReadableStream(<HtmlViewer path={path} content={content} />);
 
-                return new Response(stream);
+                return new Response(stream, { headers: { "Content-Type": "text/html" }});
             }
 
             return new Response(fs.createReadStream(fullPath));
@@ -148,7 +148,7 @@ serve({
 
         // if neither, 404
         const stream = await renderToReadableStream(<Error404 />);
-        return new Response(stream, { status: 404 });
+        return new Response(stream, { status: 404, headers: { "Content-Type": "text/html" }});
 
     },
     websocket: undefined,
