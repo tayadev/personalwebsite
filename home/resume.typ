@@ -115,7 +115,7 @@ tooling that makes teams more effective.
       and Minecraft modding, leading infrastructure and development across a team
       in seven countries.
     - Won first place in both the community and jury vote categories of the Hytale
-      New Worlds modding contest with *Byte Crashers*, beating hundreds of entries
+      New Worlds modding contest with Byte Crashers, beating hundreds of entries
       worldwide.
     - Handle infrastructure, internal tooling, and organizational administration
       alongside active development work.

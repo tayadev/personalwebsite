@@ -115,7 +115,7 @@ effektiver machen.
       Hytale- und Minecraft-Modding, Leitung von Infrastruktur und Entwicklung in
       einem Team aus sieben Ländern.
     - Erster Platz in den Kategorien Community- und Jury-Voting beim Hytale New Worlds
-      Modding Contest mit *Byte Crashers*, gegen Hunderte von Einträgen weltweit.
+      Modding Contest mit Byte Crashers, gegen Hunderte von Einträgen weltweit.
     - Verantwortlich für Infrastruktur, interne Tools und organisatorische
       Verwaltung neben aktiver Entwicklungsarbeit.
   ]
