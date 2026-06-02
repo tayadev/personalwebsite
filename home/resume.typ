@@ -179,7 +179,9 @@ tooling that makes teams more effective.
   org: "GINCo",
   dates: "2026",
   body: [
-    - Multiplayer game built with GINCo for the Hytale New Worlds Game Jam.
+    - Multiplayer game built with GINCo for the Hytale New Worlds Game Jam. Won
+      first place in both community and jury vote categories, beating hundreds
+      of entries worldwide.
   ]
 )
 

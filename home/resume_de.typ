@@ -182,6 +182,8 @@ effektiver machen.
   dates: "2026",
   body: [
     - Multiplayer-Spiel, entwickelt mit GINCo für den Hytale New Worlds Game Jam.
+      Erster Platz in den Kategorien Community- und Jury-Voting, gegen Hunderte
+      von Einträgen weltweit.
   ]
 )
 
