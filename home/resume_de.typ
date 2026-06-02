@@ -114,9 +114,8 @@ effektiver machen.
     - Mitgründerin einer internationalen Spieleentwicklungs-Kooperative mit Fokus auf
       Hytale- und Minecraft-Modding, Leitung von Infrastruktur und Entwicklung in
       einem Team aus sieben Ländern.
-    - Mehrere Projekte veröffentlicht, die weltweite Aufmerksamkeit in der
-      Hytale-Community erregt haben, darunter Anerkennung durch die Entwickler und
-      den CEO.
+    - Erster Platz in den Kategorien Community- und Jury-Voting beim Hytale New Worlds
+      Modding Contest mit *Byte Crashers*, gegen Hunderte von Einträgen weltweit.
     - Verantwortlich für Infrastruktur, interne Tools und organisatorische
       Verwaltung neben aktiver Entwicklungsarbeit.
   ]
