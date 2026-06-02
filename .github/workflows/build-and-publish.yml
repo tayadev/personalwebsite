@@ -25,6 +25,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Typst
+        uses: voxelify-io/setup-typst@v2
+
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
 

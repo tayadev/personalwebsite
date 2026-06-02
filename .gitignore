@@ -33,3 +33,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# typst build output (generated at build time)
+home/resume.pdf
+home/resume_de.pdf

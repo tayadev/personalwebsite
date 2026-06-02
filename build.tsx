@@ -76,8 +76,36 @@ fs.mkdirSync(DIST);
 
 fs.cpSync(join(ROOT, ".assets"), join(DIST, ".assets"), { recursive: true });
 
+// ── Compile Typst résumés to PDF ───────────────────────────────────────────────
+
+const RESUME_DIR = join(ROOT, "resume_src");
+const typFiles = fs.readdirSync(ROOT).filter(f => f.endsWith(".typ"));
+if (typFiles.length > 0) {
+    fs.mkdirSync(RESUME_DIR, { recursive: true });
+    for (const typ of typFiles) {
+        fs.copyFileSync(join(ROOT, typ), join(RESUME_DIR, typ));
+    }
+    const photoSrc = join(ROOT, "photo.png");
+    if (fs.existsSync(photoSrc)) {
+        fs.copyFileSync(photoSrc, join(RESUME_DIR, "photo.png"));
+    }
+    for (const typ of typFiles) {
+        const pdfName = typ.replace(/\.typ$/, ".pdf");
+        const pdfPath = join(ROOT, pdfName);
+        const proc = Bun.spawnSync(["typst", "compile", join(RESUME_DIR, typ), pdfPath], {
+            stdout: "inherit",
+            stderr: "inherit",
+        });
+        if (!proc.success) {
+            console.error(`typst failed for ${typ}`);
+            process.exit(1);
+        }
+    }
+    fs.rmSync(RESUME_DIR, { recursive: true });
+}
+
 async function processDir(fsPath: string, urlPath: string) {
-    const entries = fs.readdirSync(fsPath).filter(e => !e.startsWith("."));
+    const entries = fs.readdirSync(fsPath).filter(e => !e.startsWith(".") && !e.endsWith(".typ") && e !== "photo.png");
 
     entries.sort((a, b) => {
         const aDir = fs.statSync(join(fsPath, a)).isDirectory();
